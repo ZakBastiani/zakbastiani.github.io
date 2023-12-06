@@ -12,11 +12,11 @@
       gtag('config', 'UA-154633056-2');
     </script>
 
-    <title>Ramansh Sharma</title>
+    <title>Zachary Bastiani</title>
 
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-    <meta name="author" content="Ramansh Sharma" />
+    <meta name="author" content="Zachary Bastiani" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="/style.css" />
@@ -37,16 +37,16 @@
                 Zachary Bastiani
               </h1>
               <p>
-                I am a Ph.D. student with in the Scientific Computing and Imaging Institute at the University of Utah. I am being coadvised by <a href="https://www.sci.utah.edu/people/kirby.html">Mike Kirby</a> and <a href="https://users.cs.utah.edu/~zhe/">Shandian Zhe. My research focuses on deep learning approaches to symbolic regression.</a>.
+                I am a Ph.D. student with in the Scientific Computing and Imaging Institute at the University of Utah. I am being coadvised by <a href="https://www.sci.utah.edu/people/kirby.html">Mike Kirby</a> and <a href="https://users.cs.utah.edu/~zhe/">Shandian Zhe</a>. My research focuses on deep learning approaches to symbolic regression.
               <p>
                 During 2022 and 2023, I worked within the medical industry, trying to improve and implement machine-learning techniques to enhance the care of patients. With Strive Health, I implemented a new state-of-the-art model to improve the prediction accuracy of Chronic Kidney Disease patients. At BioMérieux, I focused on integrating deep learning into R&I's workflow to enhance development and system support.              </p>
 
               <p style="text-align:center">
                 Warnock Engineering Building, Office 3783 <br><br>
-                <b>zak </b> <b> [dot] </b> </b> [at] <b> sci.utah.edu <br> </b>
+                <b>zak </b> [dot] <b> bastiani </b> </b> [at] <b> sci.utah.edu <br> </b>
                 <br>
                 <a href="https://github.com/ZakBastiani">GitHub</a> &nbsp;/&nbsp;
-                <a href="/docs/Zachary Bastiani-CV.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="/docs/Zachary Bastiani-CV.pdf">CV</a> &nbsp;
 
               </p>
             </td>
@@ -70,7 +70,10 @@
                   <strong>March 2022 - Jun 2022</strong>: Data Scientist intern at Strive Health to improve kidney care.
               </p>
               <p>
-                <strong>August 2016 - December 2021</strong>: Double major in Computer Science and mMthematics at the University of Utah.</p>
+                <strong>June 2021 - December 2021</strong>: Undergraduate Researcher in <a href="https://users.cs.utah.edu/~whitaker/">Ross Whitaker's</a> Lab.
+              </p>
+              <p>
+                <strong>August 2016 - December 2021</strong>: Double major in Computer Science and Mathematics at the University of Utah.</p>
             </td>
           </tr>
         </table>
@@ -80,141 +83,49 @@
             <td style="padding:2.5%;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-              My interests lie in the field of physics-informed machine learning (PIML). My current works involves adapting physics-informed neural networks with traditional scientific computing techniques. I strongly believe the two fields together hold strong promise.
+                My research interests around bound between theoritical Mathematics and Machine-Learning. My current research is focused around symbolic regression in order to improve the visibility and interpretability of models.
               </p>
             </td>
           </tr>
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          
-          
-          
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">       
           <tr>
             <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/images/dtpinn.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+              <img src="/images/GP_Image.JPG" alt="project image" style="width:auto; height:auto; max-width:100%;" />
             </td>
             <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Accelerated Training of Physics Informed Neural Networks (PINNs) using Meshless Discretizations</h3>
+              <h3>Semiblind Calibration of Gain and Drift in a Sensor Network Using Gaussian Processes</h3>
               <br>
-              <strong>Ramansh Sharma</strong>, Varun Shankar
+              Zachary Bastiani, Ross Whitaker
 
               <br>
-              <em>Neural Information Processing Systems (NeurIPS)</em>, 2022
+              <em>Undergraduate Thesis, University of Utah</em>, 2021
               <br>
               
-              <a href="/docs/dtpinn.pdf">paper</a> /
+              <a href="https://www-old.cs.utah.edu/docs/techreports/2022/UUCS-22-004.pdf">paper</a> /       
               
-              
-              <a href="https://arxiv.org/abs/2205.09332">arxiv</a> /
-              
-              
-              <a href="https://github.com/rsmath/dt-pinn">code</a> /
-              
-              
-              <a href="https://bit.ly/dtpinn_neurips_talk">video</a> /
-              
-              
-              <a href="https://neurips.cc/virtual/2022/poster/53689">poster</a>
+              <a href="https://github.com/ZakBastiani/GPResearch">code</a>
+
               
               <!--  -->
               <p></p>
-              <p>We present a new technique for the accelerated training of physics-informed neural networks (PINNs): discretely-trained PINNs (DT-PINNs). DT-PINNs are trained by replacing exact spatial derivatives with high-order accurate numerical discretizations computed using meshless radial basis function-finite differences (RBF-FD) and applied via sparse-matrix vector multiplication. Additionally, though traditional PINNs (vanilla-PINNs) are typically stored and trained in 32-bit floating-point (fp32) on the GPU, we show that for DT-PINNs, using fp64 on the GPU leads to significantly faster training times than fp32 vanilla-PINNs with comparable accuracy. Our results show that fp64 DT-PINNs offer a superior cost-accuracy profile to fp32 vanilla-PINNs.</p>
-
+              <p>In this thesis, we assume that gain is constant throughout the sensor network and
+                that each sensor has its own drift that is changing in time. Furthermore, we used a
+                second Gaussian process to model the drift for our sensor network. We evaluated the
+                effectiveness of three different optimization strategies’ ability to retrieve the underly-
+                ing data from a synthetic data set. The first optimization strategy calculates gain and
+                drift using a alternating fixed-point algorithm. The second optimization strategy uses
+                an optimizer to find the gain while drift is changed to be dependent upon gain. Lastly,
+                we progressed the second optimization strategy by also having the optimizer find the
+                bandwidths of our kernel function, the third optimization strategy.
             </td>
           </tr>
           
           
-          
-          
-          
-          <tr>
-            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-              <img src="/images/kddpaper.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
-            </td>
-            <td style="padding:2.5%;width:75%;vertical-align:middle">
-              <h3>Beyond modeling: NLP Pipeline for efficient environmental policy analysis</h3>
-              <br>
-              Jordi Planas, Daniel Firebanks-Quevedo, Galina Naydenova, <strong>Ramansh Sharma</strong>, Cristina Taylor, Kathleen Buckingham, Rong Fang
 
-              <br>
-              <em>Fragile Earth proceedings - KDD</em>, 2021
-              <br>
-              
-              <a href="/docs/kddpaper.pdf">paper</a> /
-              
-              
-              <a href="https://arxiv.org/abs/2201.07105">arxiv</a> /
-              
-              
-              <a href="https://github.com/wri-dssg-omdena/policy-data-analyzer">code</a> /
-              
-              
-              <a href="https://youtu.be/GfDwWJLSoFo">video</a> /
-              
-              
-              <!--  -->
-              <p></p>
-              <p>We propose a Knowledge Management Framework based on NLP techniques that would tackle challenges such as resource-intensive nature, lack of comprehensive information sources, and overlapping jurisdictions in policy analysis. The framework is designed to be platform-, language- and policy-agnostic. To classify financial incentives in restoration policies, both Sentence-BERT and Cross-Encoders performed well. For sentence classification inference with Sentence-BERT, a random forest classifier can be used to assign a category to a given sentence using the Sentence-BERT learned embeddings.</p>
-
-            </td>
-          </tr>
-          
-          
-          
         </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Mentoring</h2>
-              <p>
-              I frequently mentor undergraduate and high school students who wish to pursue a career in Machine Learning. If you think my academic and professional experiences so far can help you in any way, please send me an email.
-              </p>
-            </td>         
-          </tr>
-        </table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Talks</h2>
-              <p>
-              I often speak at events to encourage students to consider a path in machine learning. I share some of those
-              events below:
-              <ol>
-              <li><a href="https://youtu.be/C_V3EKr0rCw"><strong>Bronx Science Machine Learning club</strong></a>: I discussed different ways students can start learning machine learning
-              concepts, make unique and interesting projects (and share them), and approach internship opportunities.</li>
-              <br>
-              <li><a href="https://youtu.be/qWMOFWCCC9Y"><strong>Devs' Street event</strong></a>: I discussed my past projects and the lessons I
-              learned from them on applying machine learning in industry. I shared my personal experience looking for internship opportunities and
-              making presentable projects.</li>
-              <br>
-              <li><a href="https://youtu.be/um73FhxAjBs"><strong>NeurIPS 2020 Nairobi meetup</strong></a>: I co-hosted this online meetup for NeurIPS
-              2020 where we invited researchers and practitioners from Stanford University, George Washinton University, Facebook AI Residency program, Amazon, Spotify,
-              Google, Instadeep, and NVIDIA
-              research divisions.</li>
-              <br>
-              <li><a href="https://youtu.be/XCPhfLGGYcg"><strong>Neural Networks Workshop</strong></a>: I gave
-              a technical workshop at SRM IST in 2020 for Microsoft Student Partner Open Day on introduction to neural networks and machine learning.</li>
-              </ol>
-              </p>
-              <!-- <br> -->
-              <!-- <ul> -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!--      -->
-              <!-- </ul> -->
-            <!-- </td> -->         
-          </tr>
-        </table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
